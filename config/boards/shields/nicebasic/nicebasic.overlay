@@ -11,8 +11,7 @@
         label = "KSCAN";
         diode-direction = "col2row";
 
-        row-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        row-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         col-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH)>;
     };
@@ -23,8 +22,7 @@
         columns = <1>;
 
         map = <
-                     RC(0, 0) 
-                     RC(1, 0) 
+                     RC(0, 0)  
         >;
     };
 };
